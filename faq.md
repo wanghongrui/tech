@@ -10,6 +10,10 @@
   },
 ```
 
-2. 对ol-debug.js打包后操作后也就是某些函数无法访问了。类似于
- ```(new ol.format.GeoJSON()).readFeaturesFromObject(maskObj)```
- 就不能使用了。会提示readFeaturesFromObject is not a function，为避免遇到类似问题，请以官方文档为依据。
+2. Openlayers中的某些函数无法使用了，提示not a function 
+
+  在ol-debug.js中存在的函数在ol.js中就不一定存在了。
+  类似于 ```(new ol.format.GeoJSON()).readFeaturesFromObject(maskObj)```
+ 就不能使用了， 会提示readFeaturesFromObject is not a function。
+ 
+ 为避免再次遇到这类问题，还是以官方文档作为依据。
